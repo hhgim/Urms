@@ -117,7 +117,7 @@ input[type=submit]:focus {
       </tr>
        <tr>
 		<td class="td1">패스워드</td>
-		<td><input type="password" id="userPw" name="userPw" /></td>
+		<td><input type="password" id="user_Pw" name="user_Pw" /></td>
 	   </tr>
 		</table>
 		<input type="submit" value="수정" />

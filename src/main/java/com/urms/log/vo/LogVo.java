@@ -2,69 +2,68 @@ package com.urms.log.vo;
 
 public class LogVo {
 	// FIELDS
-	private String userId;
-	private String userNm;
-	private String userPw;
-	private String accessYn;
-	private String modDttm;
+	private String user_Id;
+	private String user_Nm;
+	private String user_Pw;
+	private String access_Yn;
+	private String mod_Dttm;
 	
 	public LogVo() {}
 
-	public LogVo(String userId, String userNm, String userPw, String accessYn, String modDttm) {
+	public LogVo(String user_Id, String user_Nm, String user_Pw, String access_Yn, String mod_Dttm) {
 		super();
-		this.userId = userId;
-		this.userNm = userNm;
-		this.userPw = userPw;
-		this.accessYn = accessYn;
-		this.modDttm = modDttm;
+		this.user_Id = user_Id;
+		this.user_Nm = user_Nm;
+		this.user_Pw = user_Pw;
+		this.access_Yn = access_Yn;
+		this.mod_Dttm = mod_Dttm;
 	}
 
-	public String getUserId() {
-		return userId;
+	public String getUser_Id() {
+		return user_Id;
 	}
 
-	public void setUserId(String userId) {
-		this.userId = userId;
+	public void setUser_Id(String user_Id) {
+		this.user_Id = user_Id;
 	}
 
-	public String getUserNm() {
-		return userNm;
+	public String getUser_Nm() {
+		return user_Nm;
 	}
 
-	public void setUserNm(String userNm) {
-		this.userNm = userNm;
+	public void setUser_Nm(String user_Nm) {
+		this.user_Nm = user_Nm;
 	}
 
-	public String getUserPw() {
-		return userPw;
+	public String getUser_Pw() {
+		return user_Pw;
 	}
 
-	public void setUserPw(String userPw) {
-		this.userPw = userPw;
+	public void setUser_Pw(String user_Pw) {
+		this.user_Pw = user_Pw;
 	}
 
-	public String getAccessYn() {
-		return accessYn;
+	public String getAccess_Yn() {
+		return access_Yn;
 	}
 
-	public void setAccessYn(String accessYn) {
-		this.accessYn = accessYn;
+	public void setAccess_Yn(String access_Yn) {
+		this.access_Yn = access_Yn;
 	}
 
-	public String getModDttm() {
-		return modDttm;
+	public String getMod_Dttm() {
+		return mod_Dttm;
 	}
 
-	public void setModDttm(String modDttm) {
-		this.modDttm = modDttm;
+	public void setMod_Dttm(String mod_Dttm) {
+		this.mod_Dttm = mod_Dttm;
 	}
 
 	@Override
 	public String toString() {
-		return "LogVo [userId=" + userId + ", userNm=" + userNm + ", userPw=" + userPw + ", accessYn=" + accessYn
-				+ ", modDttm=" + modDttm + "]";
+		return "LogVo [user_Id=" + user_Id + ", user_Nm=" + user_Nm + ", user_Pw=" + user_Pw + ", access_Yn="
+				+ access_Yn + ", mod_Dttm=" + mod_Dttm + "]";
 	}
-
 	
 	
 }

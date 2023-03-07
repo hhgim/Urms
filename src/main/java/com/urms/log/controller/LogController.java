@@ -53,8 +53,8 @@ public class LogController {
 		LogVo vo = logService.login(map);
 		if ( vo != null) {
 			session.setAttribute("login", vo);
-			session.setAttribute("id", vo.getUserId());
-		if ( vo.getModDttm() == null || vo.getModDttm().equals("")) {
+			session.setAttribute("id", vo.getUser_Id());
+		if ( vo.getMod_Dttm() == null || vo.getMod_Dttm().equals("")) {
 			returnURL = "log/userMod";
 			 }
 		  else {

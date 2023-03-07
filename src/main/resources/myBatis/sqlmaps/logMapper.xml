@@ -6,22 +6,22 @@
         resultType="com.urms.log.vo.LogVo"
         parameterType="hashmap">
         
-     SELECT USERID, 
-            USERNM,
-            USERPW,
-            TO_CHAR(MODDTTM, 'YYYY-MM-DD HH24:MI:SS') MODDTTM,
-			ACCESSYN
+     SELECT USER_ID, 
+            USER_NM,
+            USER_PW,
+            TO_CHAR(MOD_DTTM, 'YYYY-MM-DD HH24:MI:SS') MOD_DTTM,
+			ACCESS_YN
       FROM  USER
-      WHERE USERID = #{userId}
-      AND   USERPW = #{userPw}    
+      WHERE USER_ID = #{user_Id}
+      AND   USER_PW = #{user_Pw}    
     
     </select>
     
     <update id="update">
      UPDATE  USER
-	     SET    USERPW = #{userPw},
-	     		MODDTTM = NOW()
-	     WHERE  USERID = #{ userId } 
+	     SET    USER_PW = #{user_Pw},
+	     		MOD_DTTM = NOW()
+	     WHERE  USER_ID = #{ user_Id } 
     </update>
     
 </mapper>

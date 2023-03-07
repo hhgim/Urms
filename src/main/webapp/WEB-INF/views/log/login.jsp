@@ -14,8 +14,8 @@
 	<form action="/loginProcess" method="POST">
      
      <table>
-     	<tr><td>아이디</td><td> <input type="text" name="userId" /></td></tr>
-     	<tr><td>암호</td><td> <input type="password" name="userPw"  /></td></tr>
+     	<tr><td>아이디</td><td> <input type="text" name="user_Id" /></td></tr>
+     	<tr><td>암호</td><td> <input type="password" name="user_Pw"  /></td></tr>
      </table>
      <div>
        <input type="submit" value="로그인" />
