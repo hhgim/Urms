@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="Log">
+
+     <select id="login"
+        resultType="com.urms.log.vo.LogVo"
+        parameterType="hashmap">
+        
+     SELECT USERID, 
+            USERNM,
+            USERPW,
+            TO_CHAR(MODDTTM, 'YYYY-MM-DD HH24:MI:SS') MODDTTM,
+			ACCESSYN
+      FROM  USER
+      WHERE USERID = #{userId}
+      AND   USERPW = #{userPw}    
+    
+    </select>
+    
+    <update id="update">
+     UPDATE  USER
+	     SET    USERPW = #{userPw},
+	     		MODDTTM = NOW()
+	     WHERE  USERID = #{ userId } 
+    </update>
+    
+</mapper>

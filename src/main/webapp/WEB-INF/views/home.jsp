@@ -7,6 +7,8 @@
 <title>Insert title here</title>
 </head>
 <body>
-<h1>hi</h1>
+	<div id="main">
+		<%@ include file="/WEB-INF/include/menus.jsp" %>
+	</div>
 </body>
 </html>
